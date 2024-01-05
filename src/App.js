@@ -1,6 +1,6 @@
 import "./styles.css";
 
-function Greeting({ name }) {
+/*function Greeting({ name }) {
   if (name === "Coach") {
     return <h1>Hello, Coach!</h1>;
   } else {
@@ -14,7 +14,13 @@ function App() {
       <Greeting name="Alice" />
     </div>
   );
+}*/
+
+export default function App() {
+  return <Greeting name="Niklas" />
+
 }
 
-export default App;
-
+function Greeting({ name }) {
+  return <h1>Hello {name === "Niklas" ? "Coach" : name}!</h1>;
+}
